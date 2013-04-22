@@ -1,4 +1,8 @@
 # Sample app
+This minibase-sample is a good boilerplate for new apps.
+
+Based on the [Minibase](https://github.com/peec/minibase) framework. 
+
 
 This sample application includes some plugins.
 
