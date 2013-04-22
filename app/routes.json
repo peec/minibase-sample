@@ -1,0 +1,4 @@
+[
+	["get", "/", "app/controllers/Home.index"],
+	["post", "/news", "app/controllers/Home.createNews"]
+]
