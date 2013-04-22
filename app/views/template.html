@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sample app</title>
+		<!-- Assets must be piped to |asset -->
+		<link rel="stylesheet" type="text/css" href="{{"assets/css/style.css"|asset}}" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Minibase Sample App</h1>
+			</header>
+			<!-- Twig block, now child templates can extend this one. -->
+			{% block content %}{% endblock %}
+		</div>
+		
+	</body>
+</html>

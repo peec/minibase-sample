@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+
+header h1{
+	font-size: 30pt;
+	color: #ccc;
+}
+header {
+	border-bottom: 1px dotted #ccc;
+}
+
+.container {
+	width: 600px;
+	margin: 0 auto 0 auto;
+}
