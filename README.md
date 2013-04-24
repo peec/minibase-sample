@@ -30,6 +30,18 @@ chmod 0777 app/cache/db.sqlite
 ```
 
 
+**Security note**: ONLY THE `www` FOLDER SHOULD BE ACCESSIBLE FROM THE WEB SERVER.
+
+
 ## Configure
 
 See app/app.json and app/routes.json to configure.
+
+
+## Secure
+
+By default this app is secure against:
+
+- XSS attacks (the twig plugin)
+- CSRF attacks (the csrf plugin)
+- Sql Injections (the doctrine plugin)
