@@ -12,7 +12,7 @@
 		"viewPath": "${APP_DIR}/views/"
 	},
 	"cacheDriver": {
-		"name": "Minibase/Cache/Memcached/MemcachedDriver",
+		"name": "Minibase/Cache/ConfigureMemcached",
 		"config": {
 			"servers": [
 				["localhost", 11211]
@@ -23,6 +23,17 @@
 		"app/events/AppEvents"
 	],
 	"plugins": [
+		{
+			"name": "Pkj/Minibase/Plugin/AuthPlugin/AuthPlugin",
+			"config": {
+				"providers": {
+					"facebook": {
+						"appId": "Fb app id",
+						"secret": "my secret key"
+					}
+				}
+			}
+		},
 		{
 			"name": "Pkj/Minibase/Plugin/TwigPlugin/TwigPlugin",
 			"config": {
@@ -37,9 +48,13 @@
 			"config": {
 				"metadata": "annotation",
 				"entityDirs": ["${APP_DIR}/models/"],
+				"proxyDir": "${APP_DIR}/cache/proxies",
 				"connection": {
-					"driver": "pdo_sqlite",
-					"path": "${APP_DIR}/cache/db.sqlite"
+					"driver": "pdo_mysql",
+					"host": "127.0.0.1",
+					"dbname": "mymbapplication",
+					"user": "mymbapplication",
+					"password": "52rqty5cYTuFDHsH"
 				}
 			}
 		}

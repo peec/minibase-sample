@@ -1,14 +1,16 @@
 <?php
 namespace app\models;
 
+use Doctrine\ORM\Mapping as ORM;
+
 /**
- * @Entity @Table(name="news")
+ * @ORM\Entity @ORM\Table(name="news")
  */
 class News {
 	
-	/** @Id @Column(type="integer") @GeneratedValue **/
+	/** @ORM\Id @ORM\Column(type="integer") @ORM\GeneratedValue **/
 	protected $id;
-	/** @Column(type="string") **/
+	/** @ORM\Column(type="string") **/
 	protected $title;
 	
 	public function setTitle($title) {

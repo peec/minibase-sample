@@ -8,3 +8,4 @@ app/cache/templates/*.php
 .buildpath
 .settings/
 .project
+app/cache/proxies/*.php

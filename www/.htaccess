@@ -1,4 +1,7 @@
+SetEnv HTTP_MOD_REWRITE On
+SetEnv APPLICATION_ENV development
+
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php?/$1 [L]
+RewriteRule ^(.*)$ index.php/$0 [L,QSA]

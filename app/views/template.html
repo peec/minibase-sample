@@ -10,6 +10,17 @@
 		<div class="container">
 			<header>
 				<h1>Minibase Sample App</h1>
+				<p>
+				{% if currentUser %}
+					Welcome {{currentUser.getUsername()}}.
+					<a href="{{"Pkj/Minibase/Plugin/AuthPlugin/AuthController.logout"|route()}}">Logout</a>
+				
+				{% else %}
+					<a href="{{"Pkj/Minibase/Plugin/AuthPlugin/AuthController.login"|route()}}">Login</a> or 
+					<a href="{{"Pkj/Minibase/Plugin/AuthPlugin/AuthController.register"|route()}}">Register</a>
+					
+				{% endif %}
+				</p>
 			</header>
 			<!-- Twig block, now child templates can extend this one. -->
 			{% block content %}{% endblock %}

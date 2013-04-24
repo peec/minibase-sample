@@ -5,8 +5,14 @@ use Minibase\Mvc\Controller;
 
 use app\models\News;
 
+use Minibase\Annotation;
+
 class Home extends Controller {
 	
+	/**
+	 * This annotation will work in production mode. See the .htacess file in the www folder to set app mode to production.
+	 * @Annotation\CachedCall(key="homepage", expire=30)
+	 */
 	public function index () {
 		
 		$em = $this->mb->em;
