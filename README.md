@@ -1,7 +1,11 @@
 # Sample app
 This minibase-sample is a good boilerplate for new apps.
 
+![Sample app index](/screenshots/index.png)
+
+
 Based on the [Minibase](https://github.com/peec/minibase) framework. 
+
 
 
 This sample application includes some plugins.
@@ -47,3 +51,17 @@ By default this app is secure against:
 - XSS attacks (the twig plugin)
 - CSRF attacks (the csrf plugin)
 - Sql Injections (the doctrine plugin)
+
+
+## Some screenshots
+
+Since we included the auth plugin, we can override the template files and include them in our app.
+
+![Sample app index](/screenshots/login.png)
+
+
+Using custom annotation only admins can access the admin page.
+
+![Sample app index](/screenshots/admin-panel.png)
+
+
