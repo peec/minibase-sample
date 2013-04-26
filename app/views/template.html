@@ -15,7 +15,10 @@
 				{% if currentUser %}
 					Welcome {{currentUser.getUsername()}}.
 					<a href="{{"Pkj/Minibase/Plugin/AuthPlugin/AuthController.logout"|route()}}">Logout</a>
-				
+					
+					{% if currentUser.hasGroup("admin") %}
+						| <a href="{{"app/controllers/Admin.index"|route()}}">Admin panel</a>
+					{% endif %}
 				{% else %}
 					<a href="{{"Pkj/Minibase/Plugin/AuthPlugin/AuthController.login"|route()}}">Login</a> or 
 					<a href="{{"Pkj/Minibase/Plugin/AuthPlugin/AuthController.register"|route()}}">Register</a>

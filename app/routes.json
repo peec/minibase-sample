@@ -1,4 +1,6 @@
 [
 	["get", "/", "app/controllers/Home.index"],
-	["post", "/news", "app/controllers/Home.createNews"]
+	["post", "/news", "app/controllers/Home.createNews"],
+	
+	["get", "/admin", "app/controllers/Admin.index"]
 ]
