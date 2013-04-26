@@ -6,9 +6,11 @@ Based on the [Minibase](https://github.com/peec/minibase) framework.
 
 This sample application includes some plugins.
 
-- Doctrine plugin (ORM)
-- Twig plugin (templating engine)
-- CSRF Protection plugin (for security)
+- [Doctrine plugin](https://github.com/peec/minibase-plugin-doctrine) (ORM)
+- [Twig plugin](https://github.com/peec/minibase-plugin-twig) (templating engine)
+- [CSRF Protection plugin](https://github.com/peec/minibase-plugin-csrfprotection) (for security)
+- [Auth plugin](https://github.com/peec/minibase-plugin-auth) , allows easy authentication out of the box. Supports facebook auth, normal auth and more. 
+
 
 ## Install
 
@@ -18,15 +20,15 @@ Install the app with composer.
 composer install
 ```
 
-By default we use sqlite database driver, so if you want the app to work out of the box.
+See the configuration file for the app (`app/app.json`). And configure the database settings.
+
+After a database is created, you can run these commands:
 
 ```bash
 # Permissions for the cache dir.
 chmod -R 0777 app/cache
 # Create the database (db.sqlite)
 php cli.php orm:schema-tool:create
-# Permissions for sqlite so its writable.
-chmod 0777 app/cache/db.sqlite
 ```
 
 
