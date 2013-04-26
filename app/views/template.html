@@ -9,8 +9,9 @@
 	<body>
 		<div class="container">
 			<header>
-				<h1>Minibase Sample App</h1>
+				<a href="{{"app/controllers/Home.index"|route()}}"><h1>Minibase Sample App</h1></a>
 				<p>
+				<!-- currentUser is from the auth plugin, it injects this var to every template. -->
 				{% if currentUser %}
 					Welcome {{currentUser.getUsername()}}.
 					<a href="{{"Pkj/Minibase/Plugin/AuthPlugin/AuthController.logout"|route()}}">Logout</a>
@@ -22,6 +23,15 @@
 				{% endif %}
 				</p>
 			</header>
+			
+			<!-- Custom flash message handler. -->
+			{% if flash.success %}
+				<div style="border: 1px solid black; padding: 10px; background: #A9F5A9; margin: 5px 0 5px;">
+					{{flash.success}}
+				</div>
+			{% endif %}
+			
+			
 			<!-- Twig block, now child templates can extend this one. -->
 			{% block content %}{% endblock %}
 		</div>

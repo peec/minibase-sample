@@ -7,6 +7,8 @@ use app\models\News;
 
 use Minibase\Annotation;
 
+use Pkj\Minibase\Plugin\AuthPlugin\Annotation as Restrict;
+
 class Home extends Controller {
 	
 	/**
@@ -34,5 +36,7 @@ class Home extends Controller {
 		return $this->respond("redirect")
 			->to($this->call('app/controllers/Home.index')->reverse()->url);
 	}
+	
+	
 	
 }

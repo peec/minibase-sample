@@ -19,4 +19,16 @@ class AppEvents extends EventCollection{
 		};
 	}
 	
+	/**
+	 * CSRF exception override. 
+	 *
+	 * @Annotation\Event("csrf:invalid")
+	 */
+	public function CsrfTokenIsInvalid ($request) {
+		return function () use ($request) {
+			return $this->respond("html")
+			->view("csrfFailure.html", array('request' => $request))
+			->with(404);
+		};
+	}
 }

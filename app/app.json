@@ -31,6 +31,10 @@
 						"appId": "Fb app id",
 						"secret": "my secret key"
 					}
+				},
+				"api": {
+					"ensure_token": true,
+					"expire_timeout": "+4 days"
 				}
 			}
 		},
