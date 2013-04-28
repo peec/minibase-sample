@@ -39,6 +39,13 @@
 			}
 		},
 		{
+			"name": "Pkj/Minibase/Plugin/MailerPlugin/MailerPlugin",
+			"config": {
+				"transport": "mail",
+				"defaultFromEmail": "me@mydomain.com"
+			}
+		},
+		{
 			"name": "Pkj/Minibase/Plugin/TwigPlugin/TwigPlugin",
 			"config": {
 				

@@ -3,6 +3,9 @@
 	     "minibase/minibase":"dev-master",
 	     "pkj/minibase-plugin-twig": "dev-master",
          "pkj/minibase-plugin-doctrine": "dev-master",
-	     "pkj/minibase-plugin-csrfprotection": "dev-master"
+	     "doctrine/migrations": "dev-master",
+	     "pkj/minibase-plugin-mailer": "dev-master",        
+	     "pkj/minibase-plugin-csrfprotection": "dev-master",
+	     "pkj/minibase-plugin-auth": "dev-master"	     
 	}
 }

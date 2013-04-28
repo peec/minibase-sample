@@ -16,7 +16,6 @@ class Home extends Controller {
 	 * @Annotation\CachedCall(key="homepage", expire=30)
 	 */
 	public function index () {
-		
 		$em = $this->mb->em;
 		// Entity manager
 		$newsRepository = $em->getRepository('app\models\News');
