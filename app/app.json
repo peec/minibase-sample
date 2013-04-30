@@ -8,6 +8,18 @@
 			"path": "${APP_DIR}/.."
 		}
 	],
+	"i18n": {
+		"defaultLocale": "en_GB",
+		"availableLanguages": ["en_GB"],
+		"localeRepositories": [
+			{
+				"domain": "myapp",
+				"localeDir": "${APP_DIR}/locale",
+				"rootDirs": ["twig:${APP_DIR}/views", "php:${APP_DIR}"],
+				"locale": "en_GB"
+			}
+		]
+	},
 	"config": {
 		"viewPath": "${APP_DIR}/views/"
 	},
