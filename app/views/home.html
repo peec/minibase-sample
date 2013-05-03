@@ -1,7 +1,7 @@
 {% extends "template.html" %}
 
 {% block content %}
-		<h1>{{"Hello World"|_d("myapp")}}</h1>
+		<h1>{{dgettext("myapp","Hello World")}}</h1>
 		<p>This is a sample app using minibase.</p>
 		
 		<p>Run "php cli.php orm:schema-tool:create" to install database (sqlite is default).</p>

@@ -17,6 +17,9 @@ class Home extends Controller {
 	 */
 	public function index () {
 		$em = $this->mb->em;
+		
+		$someText = dgettext("myapp", "Hello, this is a string...");
+		
 		// Entity manager
 		$newsRepository = $em->getRepository('app\models\News');
 		$news = $newsRepository->findAll();

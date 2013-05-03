@@ -10,7 +10,7 @@
 	],
 	"i18n": {
 		"defaultLocale": "en_GB",
-		"availableLanguages": ["en_GB"],
+		"availableLanguages": ["en_GB", "nb_NO"],
 		"localeRepositories": [
 			{
 				"domain": "myapp",
