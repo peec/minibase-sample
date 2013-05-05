@@ -12,7 +12,7 @@ This sample application includes some plugins.
 - [Twig plugin](https://github.com/peec/minibase-plugin-twig) (templating engine)
 - [CSRF Protection plugin](https://github.com/peec/minibase-plugin-csrfprotection) (for security)
 - [Auth plugin](https://github.com/peec/minibase-plugin-auth) , allows easy authentication out of the box. Supports facebook auth, normal auth and more. 
-
+- Assetic plugin, to manage assets.
 
 ## Install
 
