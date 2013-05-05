@@ -1,8 +1,6 @@
 # Sample app
 This minibase-sample is a good boilerplate for new apps.
 
-![Sample app index](/screenshots/index.png)
-
 
 Based on the [Minibase](https://github.com/peec/minibase) framework. 
 
@@ -54,6 +52,9 @@ By default this app is secure against:
 
 
 ## Some screenshots
+
+![Sample app index](/screenshots/index.png)
+
 
 Since we included the auth plugin, we can override the template files and include them in our app.
 
