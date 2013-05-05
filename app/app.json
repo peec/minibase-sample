@@ -36,6 +36,17 @@
 	],
 	"plugins": [
 		{
+			"name": "Minibase/Assetic/AsseticPlugin",
+			"config": {
+				"rootDir": "${APP_DIR}/../www",
+				"filters": {
+					"cssrewrite": {
+						"filter": "Assetic/Filter/CssRewriteFilter"
+					}
+				}
+			}
+		},
+		{
 			"name": "Pkj/Minibase/Plugin/AuthPlugin/AuthPlugin",
 			"config": {
 				"providers": {

@@ -4,7 +4,10 @@
 		<meta charset="utf-8">
 		<title>Sample app</title>
 		<!-- Assets must be piped to |asset -->
-		<link rel="stylesheet" type="text/css" href="{{"assets/css/style.css"|asset}}" />
+		{% stylesheets 'assets/css/*' filter='cssrewrite'  %}
+    		<link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
+		{% endstylesheets %}
+
 	</head>
 	<body>
 		<div class="container">
