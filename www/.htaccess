@@ -1,5 +1,5 @@
 SetEnv HTTP_MOD_REWRITE On
-SetEnv APPLICATION_ENV production
+SetEnv APPLICATION_ENV development
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
