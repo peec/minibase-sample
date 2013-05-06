@@ -1,8 +1,6 @@
 # Sample app
 This minibase-sample is a good boilerplate for new apps.
 
-![Sample app index](/screenshots/index.png)
-
 
 Based on the [Minibase](https://github.com/peec/minibase) framework. 
 
@@ -14,7 +12,7 @@ This sample application includes some plugins.
 - [Twig plugin](https://github.com/peec/minibase-plugin-twig) (templating engine)
 - [CSRF Protection plugin](https://github.com/peec/minibase-plugin-csrfprotection) (for security)
 - [Auth plugin](https://github.com/peec/minibase-plugin-auth) , allows easy authentication out of the box. Supports facebook auth, normal auth and more. 
-
+- Assetic plugin, to manage assets.
 
 ## Install
 
@@ -54,6 +52,9 @@ By default this app is secure against:
 
 
 ## Some screenshots
+
+![Sample app index](/screenshots/index.png)
+
 
 Since we included the auth plugin, we can override the template files and include them in our app.
 
