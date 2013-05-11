@@ -31,6 +31,14 @@
 			]
 		}
 	},
+	"sessionDriver": {
+		"name": "Minibase/Session/ConfigureMemcachedSession",
+		"config": {
+			"servers": [
+				["localhost", 11211]
+			]
+		}
+	},
 	"eventCollections": [
 		"app/events/AppEvents"
 	],
